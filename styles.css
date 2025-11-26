@@ -4,7 +4,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: #e5c5c5;
+  background: #fcc6c6;
   font-family: Arial, sans-serif;
 }
 
@@ -12,7 +12,7 @@ body {
    HEADER
 ----------------------------------------- */
 .header-menu {
-  background: #d7a9a9 
+  background: #ff8d8d 
 ;
   padding: 10px 20px;
   display: flex;
@@ -35,14 +35,14 @@ body {
   color: white;
   text-decoration: none;
   padding: 10px 16px;
-  background: #f8918e;
+  background: #ff4f4f;
   border-radius: 10px;
   font-weight: bold;
   transition: 0.3s;
 }
 
 .top-btn:hover {
-  background: #f368a0;
+  background: #fc3636;
   transform: scale(1.08);
 }
 
@@ -97,7 +97,7 @@ body {
    FOOTER
 ----------------------------------------- */
 footer {
-  background: #d7a9a9;
+  background: #ff8d8d ;
   padding: 40px 0;
   text-align: center;
   color: white;
