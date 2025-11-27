@@ -670,3 +670,27 @@ footer {
   z-index: 999; /* Para que estén encima de todo */
   filter: drop-shadow(0 0 4px rgba(255,255,255,0.6));
 }
+.header-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: relative;
+}
+
+.btn-volver {
+  background: #e91e63;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.25s;
+  box-shadow: 0px 4px 10px rgba(233, 30, 99, 0.4);
+  margin-left: auto; /* Empuja hacia la derecha */
+}
+
+.btn-volver:hover {
+  background: #c2185b;
+  transform: translateY(-3px);
+}
