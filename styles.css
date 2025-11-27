@@ -4,7 +4,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: #fcc6c6;
+  background: #ffc5d3;
   font-family: Arial, sans-serif;
 }
 
@@ -606,3 +606,4 @@ main {
     max-width: 95%;  /* se centra mejor dentro del contenedor */
   }
 }
+
