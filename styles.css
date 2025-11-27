@@ -636,4 +636,37 @@ main {
     transform: translateY(0) scale(1);
   }
 }
-
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #ffc5d3, #ff8d8d);
+  background-attachment: fixed;
+}
+.header-menu {
+  background: linear-gradient(to bottom, #ff9aa9, #ff8d8d);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+footer {
+  background: linear-gradient(to bottom, #ff8d8d, #ff9aa9);
+  padding: 40px 0;
+  text-align: center;
+  color: white;
+  box-shadow: 0 -4px 10px rgba(0,0,0,0.15);
+}
+.flor-blanca {
+  position: fixed;
+  background-image: url('iconos/flor-blanca.png'); /* Cambia por tu flor */
+  background-size: contain;
+  background-repeat: no-repeat;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 2.5s ease-in-out;
+  z-index: 999; /* Para que estén encima de todo */
+  filter: drop-shadow(0 0 4px rgba(255,255,255,0.6));
+}
