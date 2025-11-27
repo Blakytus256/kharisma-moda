@@ -1,21 +1,35 @@
+/* -----------------------------------------
+   BASE
+----------------------------------------- */
 body {
   margin: 0;
   padding: 0;
-  background: #ffc5d3;
   font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #ffc5d3, #ff8d8d);
+  background-attachment: fixed;
 }
 
-header {
-  text-align: center;
-  padding: 20px;
-  background: #ff8d8d ;
+/* -----------------------------------------
+   HEADER
+----------------------------------------- */
+.header-menu {
+  background: linear-gradient(to bottom, #ff9aa9, #ff8d8d);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
-header img {
-  height: 150px;
+.logo {
+  height: 120px;
   object-fit: contain;
 }
 
+/* -----------------------------------------
+   GALERÍA
+----------------------------------------- */
 .galeria {
   width: 90%;
   max-width: 1200px;
@@ -32,12 +46,29 @@ header img {
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
   transition: 0.35s;
   text-align: center;
+  opacity: 0;
+  transform: translateY(40px) scale(0.95);
+  animation: reboteEntrada 0.9s ease-out forwards;
+}
+
+/* Animación cascada */
+.item:nth-child(n) {
+  animation-delay: calc(0.08s * var(--i));
+}
+
+@keyframes reboteEntrada {
+  0% { opacity: 0; transform: translateY(40px) scale(0.88); }
+  60% { opacity: 1; transform: translateY(-15px) scale(1.03); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
 }
 
 .item:hover {
   transform: scale(1.05);
 }
 
+/* -----------------------------------------
+   IMG FLIP
+----------------------------------------- */
 .img-box {
   position: relative;
   width: 100%;
@@ -48,54 +79,53 @@ header img {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  background: #ff9999; /* o el color que prefieras */
+  background: #ff9999;
   position: absolute;
   top: 0;
   left: 0;
   transition: opacity .4s ease-in-out;
 }
 
-.back {
-  opacity: 0;
-}
+.back { opacity: 0; }
+.item:hover .back { opacity: 1; }
+.item:hover .front { opacity: 0; }
 
-.item:hover .back {
-  opacity: 1;
-}
-
-.item:hover .front {
-  opacity: 0;
-}
-
+/* -----------------------------------------
+   DESCRIPCIÓN
+----------------------------------------- */
 .descripcion {
   padding: 10px;
   font-size: 14px;
   color: #555;
 }
 
-.btn-cart {
-  padding: 12px 20px;
-  background: #ec4e43;
-  color: white;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  font-weight: bold;
-  margin-bottom: 12px;
-}
-
+/* -----------------------------------------
+   FOOTER
+----------------------------------------- */
 footer {
-  background: #ff8d8d ;
-  padding: 25px;
+  background: linear-gradient(to bottom, #ff8d8d, #ff9aa9);
+  padding: 40px 0;
   text-align: center;
+  color: white;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.15);
 }
 
+/* -----------------------------------------
+   BOTÓN VOLVER
+----------------------------------------- */
 .btn-volver {
-  padding: 10px 20px;
-  background: #ff0066;
-  color: white;
-  border-radius: 12px;
+  background: #e91e63;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 50px;
   font-weight: bold;
   text-decoration: none;
+  font-size: 16px;
+  transition: 0.25s;
+  box-shadow: 0px 4px 10px rgba(233, 30, 99, 0.4);
+}
 
+.btn-volver:hover {
+  background: #c2185b;
+  transform: translateY(-3px);
 }
