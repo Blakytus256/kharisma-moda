@@ -1,14 +1,14 @@
 body {
   margin: 0;
   padding: 0;
-  background: #e5c5c5;
+  background: #fcc6c6;
   font-family: Arial, sans-serif;
 }
 
 header {
   text-align: center;
   padding: 20px;
-  background: #d7a9a9;
+  background: #ff8d8d ;
 }
 
 header img {
@@ -84,7 +84,7 @@ header img {
 }
 
 footer {
-  background: #d7a9a9;
+  background: #ff8d8d ;
   padding: 25px;
   text-align: center;
 }
