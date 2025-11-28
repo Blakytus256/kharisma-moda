@@ -5,7 +5,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background: #EBC0E3; /* Color sólido nuevo */
+  background: #EFE6DE; /* Color sólido nuevo */
 }
 
 
@@ -13,7 +13,7 @@ body {
    HEADER
 ----------------------------------------- */
 .header-menu {
-  background: #F2CBEA; /* Color sólido nuevo */
+  background: #D9ADAE; /* Color sólido nuevo */
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
@@ -98,7 +98,7 @@ body {
    FOOTER
 ----------------------------------------- */
 footer {
-  background: #F2CBEA; /* Igual que el header para armonía */
+  background: #D9ADAE; /* Igual que el header para armonía */
   padding: 40px 0;
   text-align: center;
   color: white;
