@@ -4,21 +4,22 @@
 body {
   margin: 0;
   padding: 0;
-  background: #ffc5d3;
   font-family: Arial, sans-serif;
+  background: #EBC0E3; /* Color sólido nuevo */
 }
+
 
 /* -----------------------------------------
    HEADER
 ----------------------------------------- */
 .header-menu {
-  background: #ff8d8d 
-;
+  background: #F2CBEA; /* Color sólido nuevo */
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
 .logo {
@@ -97,11 +98,13 @@ body {
    FOOTER
 ----------------------------------------- */
 footer {
-  background: #ff8d8d ;
+  background: #F2CBEA; /* Igual que el header para armonía */
   padding: 40px 0;
   text-align: center;
   color: white;
+  box-shadow: 0 -4px 10px rgba(0,0,0,0.15);
 }
+
 
 .iconos-redes {
   display: flex;
@@ -636,29 +639,7 @@ main {
     transform: translateY(0) scale(1);
   }
 }
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #ffc5d3, #ff8d8d);
-  background-attachment: fixed;
-}
-.header-menu {
-  background: linear-gradient(to bottom, #ff9aa9, #ff8d8d);
-  padding: 10px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-}
-footer {
-  background: linear-gradient(to bottom, #ff8d8d, #ff9aa9);
-  padding: 40px 0;
-  text-align: center;
-  color: white;
-  box-shadow: 0 -4px 10px rgba(0,0,0,0.15);
-}
+
 .flor-blanca {
   position: fixed;
   background-image: url('iconos/flor-blanca.png'); /* Cambia por tu flor */
